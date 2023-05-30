@@ -1,2 +1,4 @@
-# PhpSimpleAPI v2
+# PhpSimpleAPI
+
+simple framework for simple api
  
