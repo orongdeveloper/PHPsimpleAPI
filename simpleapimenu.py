@@ -3,7 +3,7 @@ import os
 
 
 def createopenendpoint():
-    url = input("enter endpoint url : ")
+    url = input("\nopen endpoint url : host/")
     url = url.replace("/","-")
     filelocation = os.path.dirname(__file__)+"/api/src/files/endpoint"
     filetarget = os.path.dirname(__file__)+"/endpoint"
@@ -15,7 +15,7 @@ def createopenendpoint():
 
 
 def createsecurepenendpoint():
-    url = input("enter endpoint url : ")
+    url = input("\nsecure endpoint url : host/")
     url = url.replace("/","-")
     filelocation = os.path.dirname(__file__)+"/api/src/files/secureEndpoint"
     filetarget = os.path.dirname(__file__)+"/endpoint"
@@ -25,13 +25,19 @@ def createsecurepenendpoint():
     print(url)
     utama()
 
+def listEndpoint():
+    os.listdir()
+    input("")
+    utama()
+
 def utama():    
     os.system('cls')
     print("-------------------------------------------\n")
     print("-      PHP SIMPLE API by danielbeeh       -\n")
     print("-------------------------------------------\n\n")
-    print("1. create open endpoint")
-    print("2. create secure endpoint")
+    print("  1. create open endpoint")
+    print("  2. create secure endpoint")
+    print("  3. list endpoint")
     opt = input("choose : ")
 
 
@@ -39,5 +45,7 @@ def utama():
         createopenendpoint()
     elif opt == "2":
         createsecurepenendpoint()
+    elif opt == "3":
+        listEndpoint()
 
 utama()
