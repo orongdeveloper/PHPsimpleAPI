@@ -1,1 +1,2 @@
-# PHPsimpleAPI
+# PhpSimpleAPI v2
+ 
